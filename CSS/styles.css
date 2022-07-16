@@ -30,11 +30,13 @@ html {
   font-family: Roboto, sans-serif;
 }
 .site-header__logo,
+.footer-logo__link,
 .site-navigation__reference--link,
 .site-navigation__reference--last,
 .header-contacts__mail,
-.contact-cellar,
-.map,
+.footer-address__contact,
+.footer-address__link,
+.footer-address__contact--link,
 .list-icon {
   text-decoration: none;
 }
@@ -73,7 +75,7 @@ header {
 .site-header__logo--studio {
   color: var(--black-color);
 }
-.studio-footer {
+.footer-logo__link--studio {
   color: var(--white-color);
 }
 .site-navigation {
@@ -193,7 +195,7 @@ header {
   margin-top: 0px;
 }
 
-.list-footer {
+.footer-address__list {
   list-style: none;
   font-style: normal;
   margin: 0;
@@ -208,7 +210,7 @@ header {
   margin-right: auto;
 }
 
-.link-logo {
+.footer-logo {
   margin-bottom: 20px;
 }
 
@@ -742,25 +744,25 @@ header {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
-.footer-links:focus,
-.footer-links:hover {
+.footer-network__icon:focus,
+.footer-network__icon:hover {
   fill: var(--accent-color);
 }
-.social:hover,
-.social:focus {
+.footer-network__link:hover,
+.footer-network__link:focus {
   fill: var(--white-color);
   background-color: var(--accent-color);
   border-radius: 50%;
 }
 /* footer */
-.footer-net {
+.footer-network {
   width: 206px;
   height: 80px;
   display: flex;
   margin-left: 70px;
   flex-wrap: wrap;
 }
-.join {
+.footer-network__header {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -772,15 +774,15 @@ header {
   margin-top: 0px;
   background-position: center;
 }
-.footer-link {
+.footer-network__list {
   display: flex;
   align-items: center;
 }
-.footer-links {
+.footer-network__icon {
   list-style: none;
   margin-right: 10px;
 }
-.social {
+.footer-network__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -792,10 +794,11 @@ header {
   transition: 250ms var(--animation-time);
 }
 
-.basement {
+.footer {
   background: var(--background-color-footer-hero);
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 .basement-nav {
   display: flex;
@@ -803,18 +806,18 @@ header {
 footer {
   display: flex;
 }
-.map {
+.footer-address__link {
   color: var(--white-color);
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 9px;
   transition: 250ms var(--animation-time);
 }
-.map :hover,
-.map :focus {
+.footer-address__link :hover,
+.footer-address__link :focus {
   color: var(--accent-color);
 }
-.contact-cellar {
+.footer-address__contact {
   color: var(--footer-contact-color);
   font-size: 14px;
   line-height: 1.71;
@@ -822,16 +825,41 @@ footer {
   letter-spacing: 0.03em;
   transition: 250ms var(--animation-time);
 }
-.contact-cellar:last-child {
+.footer-address__contact:last-child {
   margin-bottom: 0px;
 }
-.contact-cellar :hover,
-.contact-cellar :focus {
+.footer-address__contact :hover,
+.footer-address__contact :focus {
   color: var(--accent-color);
 }
+.footer-address__contact--link {
+  color: var(--footer-contact-color);
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 9px;
+  letter-spacing: 0.03em;
+  transition: 250ms var(--animation-time);
+}
+.footer-address__contact--link:last-child {
+  margin-bottom: 0px;
+}
 /* footer Subscribe */
-
-.mailing {
+.footer-logo__link {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: var(--title-text-color);
+}
+.footer-logo__link--web {
+  color: var(--accent-color);
+}
+.footer-logo__link--web {
+  color: var(--accent-color);
+}
+.footer-subscribe__header {
   color: var(--white-color);
   font-weight: 700;
   font-size: 14px;
@@ -843,13 +871,13 @@ footer {
   text-transform: uppercase;
 }
 
-.subscribe {
+.footer-subscribe {
   margin-left: 93px;
 }
-.form-subscribe {
+.footer-subscribe__box {
   display: flex;
 }
-.form-subscribe > input {
+.footer-subscribe__box > input {
   padding-left: 10px;
   width: 358px;
   height: 50px;
@@ -859,14 +887,14 @@ footer {
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
-.form-subscribe::placeholder {
+.footer-subscribe__box::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   font-style: normal;
 }
-.footer-btn {
+.footer-subscribe__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -884,7 +912,7 @@ footer {
   cursor: pointer;
   border: none;
 }
-.icon-send {
+.footer-subscribe__icon {
   margin-left: 10px;
 }
 
