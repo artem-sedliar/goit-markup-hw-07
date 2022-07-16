@@ -690,14 +690,14 @@ header {
   margin-bottom: 16px;
 }
 /* Regular customers */
-.logo1 {
+.client__icon {
   justify-content: center;
   border-radius: 4px;
   fill: currentColor;
   transition: 250ms var(--animation-time);
 }
 
-.client-icon {
+.client__logo {
   list-style: none;
   justify-content: center;
   display: flex;
@@ -706,7 +706,7 @@ header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.regular-customers {
+.client__header {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -715,12 +715,12 @@ header {
   margin-top: 0px;
   margin-bottom: 50px;
 }
-.client {
+.client__section {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.brand {
+.client__link {
   margin-right: 30px;
   justify-content: center;
   width: 170px;
@@ -732,13 +732,13 @@ header {
   color: var(--border-color-client);
   transition: 250ms var(--animation-time);
 }
-.brand:hover,
-.brand:focus {
+.client__link:hover,
+.client__link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
-.logo1:hover,
-.logo1:focus {
+.client__icon:hover,
+.client__icon:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
