@@ -598,7 +598,7 @@ header {
   margin-bottom: 50px;
   margin-top: 0px;
 }
-.items-subtitle {
+.team__header {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -607,7 +607,7 @@ header {
   margin-bottom: 50px;
   margin-top: 0px;
 }
-.list {
+.team__list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -625,22 +625,22 @@ header {
 }
 /* section team */
 
-.network {
+.team__network {
   text-decoration: none;
   display: inline-block;
   margin-right: 10px;
 }
-.links {
+.team__links {
   display: flex;
   list-style: none;
   justify-content: center;
 }
-.inst {
+.team__icon {
   width: 20px;
   height: 20px;
   color: var(--white-color);
 }
-.instagram {
+.team__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -650,13 +650,13 @@ header {
   fill: var(--border-color-client);
   transition: 250ms var(--animation-time);
 }
-.instagram:hover,
-.instagram:focus {
+.team__link:hover,
+.team__link:focus {
   fill: var(--white-color);
   background-color: var(--accent-color);
   border-radius: 50%;
 }
-.items-name {
+.team__name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -665,7 +665,7 @@ header {
   margin-bottom: 10px;
   text-align: center;
 }
-.items-icon {
+.team__section {
   background-color: var(--white-color);
 
   margin-bottom: 94px;
@@ -673,16 +673,15 @@ header {
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
     1px 4px 6px rgb(0 0 0 / 16%);
 }
-.items-icon:last-child {
+.team__section:last-child {
   margin-right: 0px;
 }
-.formation {
+.team__container {
   padding-top: 30px;
-
   padding-bottom: 30px;
 }
 
-.content {
+.team__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -928,7 +927,7 @@ footer {
   transform: translatey(0);
 }
 
-.items-icon:hover {
+.team__section:hover {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
     1px 4px 6px rgb(0 0 0 / 16%);
