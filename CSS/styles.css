@@ -489,7 +489,7 @@ header {
   cursor: pointer;
 }
 /* section text */
-.list {
+.image-box {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -497,7 +497,7 @@ header {
   margin: 0px;
   padding: 0px;
 }
-.box {
+.box-icon {
   display: flex;
   list-style: none;
   font-style: normal;
@@ -505,7 +505,7 @@ header {
   margin: 0px;
   padding: 0px;
 }
-.icon {
+.box-icon__picture {
   display: flex;
   justify-content: center;
   padding: 25px 100px;
@@ -527,7 +527,7 @@ header {
   display: none;
 }
 
-.text-subtitle {
+.box-icon__header {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -537,28 +537,28 @@ header {
   margin-top: 0px;
 }
 
-.text-information {
+.box-icon__information {
   display: inline-block;
   margin-right: 30px;
   width: 270px;
   list-style: none;
   line-height: 1.71;
 }
-.text-information:last-child {
+.box-icon__information:last-child {
   margin-right: 0px;
 }
-.text-slogan {
+.box-icon__subtitle {
   font-size: 14px;
   line-height: 1.71;
   margin: 0;
   letter-spacing: 0.03em;
 }
 /* section image */
-.image-pic {
+.image-box__picture {
   margin-right: 30px;
   position: relative;
 }
-.img-text {
+.image-box__section {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -566,7 +566,7 @@ header {
   background: rgba(47, 48, 58, 0.8);
   transition: transform 250ms ease;
 }
-.text-label {
+.image-box__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -586,7 +586,7 @@ header {
   background-color: var(--white-color);
   z-index: 2;
 }
-.image-pic:last-child {
+.image-box__picture:last-child {
   margin-right: 0px;
 }
 .subtitle {
@@ -607,7 +607,14 @@ header {
   margin-bottom: 50px;
   margin-top: 0px;
 }
-
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px;
+}
 .items {
   background-color: var(--background-color-team);
   height: 708px;
