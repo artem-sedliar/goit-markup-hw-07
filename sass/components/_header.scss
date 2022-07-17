@@ -30,6 +30,9 @@ header {
     color: var(--black-color);
 }
 
+.footer-logo__link--studio {
+    color: var(--white-color);
+}
 
 .site-navigation {
     display: flex;
@@ -38,34 +41,25 @@ header {
     font-style: normal;
     padding: 0px;
     margin-left: 93px;
-}
 
-.site-navigation__reference:hover,
-.site-navigation__reference:focus {
-        color: var(--accent-color);
-    }
-
-&__reference--current::after {
-    content: "";
-    position: absolute;
-    display: block;
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    background: var(--accent-color);
-    border-radius: 2px;
-    opacity: 1;
-    transition: 250ms var(--animation-time);
+    &__reference :hover,
+        &__reference :focus {
+            color: var(--accent-color);
+        }
+                &__reference:last-child {
+                    margin-right: 0px;
+                }
 }
 
 .site-navigation__reference {
-    margin-right: 50px;
     transition: 250ms var(--animation-time);
 }
-.site-navigation {
-&__reference:last-child {
-    margin-right: 0px;
-}}
+
+
+
+.site-navigation__reference {
+    margin-right: 50px;
+}
 
 .site-navigation__reference--current {
     color: var(--accent-color);
@@ -82,7 +76,19 @@ header {
     position: relative;
     transition: 250ms var(--animation-time);
 }
-
+.site-navigation{
+&__reference--current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+    opacity: 1;
+    transition: 250ms var(--animation-time);
+}}
 
 .site-navigation__reference--link {
     color: var(--title-text-color);
@@ -109,7 +115,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     display: block;
-    fill: var(--accent-color);
     transition: 250ms var(--animation-time);
 }
 
@@ -121,7 +126,7 @@ header {
     padding: 0px;
 
     &__phone:hover,
-        &__phone:focus {
+       &__phone:focus {
             color: var(--accent-color);
             fill: var(--accent-color);
         }
@@ -186,7 +191,7 @@ header {
     margin-right: 10px;
     fill: currentColor;
 }
-.header-contacts {
+.header-contacts{
 &__contact:last-child {
     margin-left: 30px;
 }}
