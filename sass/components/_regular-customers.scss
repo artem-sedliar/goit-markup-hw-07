@@ -3,6 +3,12 @@
     border-radius: 4px;
     fill: currentColor;
     transition: 250ms var(--animation-time);
+
+    &:hover,
+        &:focus {
+            fill: var(--accent-color);
+            border-color: var(--accent-color);
+        }
 }
 
 .client__logo {
@@ -43,28 +49,11 @@
     align-items: center;
     color: var(--border-color-client);
     transition: 250ms var(--animation-time);
-}
 
-.client__link:hover,
-.client__link:focus {
+
+&:hover,
+&:focus {
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
-}
+}}
 
-.client__icon:hover,
-.client__icon:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
-.footer-network__icon:focus,
-.footer-network__icon:hover {
-    fill: var(--accent-color);
-}
-
-.footer-network__link:hover,
-.footer-network__link:focus {
-    fill: var(--white-color);
-    background-color: var(--accent-color);
-    border-radius: 50%;
-}

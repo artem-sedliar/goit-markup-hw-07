@@ -18,13 +18,13 @@
 .button {
     margin-right: 8px;
     transition: 250ms var(--animation-time);
-}
 
-.button :hover,
-.button :focus {
+
+& :hover,
+& :focus {
     color: var(--white-color);
     background-color: var(--accent-color);
-}
+}}
 
 .list-btn {
     display: flex;

@@ -1,6 +1,10 @@
 .image-box__picture {
     margin-right: 30px;
     position: relative;
+
+    &__picture:last-child {
+            margin-right: 0px;
+        }
 }
 
 .image-box__section {
@@ -34,9 +38,7 @@
     z-index: 2;
 }
 
-.image-box__picture:last-child {
-    margin-right: 0px;
-}
+
 
 .subtitle {
     color: var(--title-text-color);

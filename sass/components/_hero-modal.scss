@@ -7,14 +7,20 @@
     background: rgba(0, 0, 0, 0.2);
     z-index: 3;
     transition: 250ms var(--animation-time);
-}
 
-.backdrop.is-hidden {
+&.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-}
+}}
 
+.section-icon {
+    position: absolute;
+    left: 12px;
+    bottom: 50%;
+    transform: translateY(50%);
+    fill: var(--title-text-color);
+}
 .modal {
     position: absolute;
     top: 50%;
@@ -26,8 +32,13 @@
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
         0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 4px;
-}
 
+
+&-close:hover,
+&-close:focus {
+    cursor: pointer;
+    fill: var(--accent-color);
+}}
 .modal-close {
     position: fixed;
     top: 8px;
@@ -39,13 +50,6 @@
     fill: var(--black-color);
     transition: 250ms var(--animation-time);
 }
-
-.modal-close:hover,
-.modal-close:focus {
-    cursor: pointer;
-    fill: var(--accent-color);
-}
-
 .modal-container {
     text-align: center;
     padding: 40px;
@@ -60,7 +64,20 @@
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-
+.modal-form {
+&__check--icon:hover {
+        cursor: pointer;
+    }
+        &__section:nth-last-child(3) {
+            margin-bottom: 0px;
+        }}
+.modal-form {
+                &__input:focus {
+                    border: 1px solid var(--accent-color);
+                }
+                                &__input:focus~.section-icon {
+                                    fill: var(--accent-color);
+                                }}
 .modal-form__section {
     display: flex;
     flex-direction: column;
@@ -69,7 +86,7 @@
     margin-right: 0px;
 }
 
-.modal-form__section:nth-last-child(3) {
+&__section:nth-last-child(3) {
     margin-bottom: 0px;
 }
 
@@ -88,17 +105,7 @@
     padding: 20px;
 }
 
-.modal-form__input:focus {
-    border: 1px solid var(--accent-color);
-}
 
-.section-icon {
-    position: absolute;
-    left: 12px;
-    bottom: 50%;
-    transform: translateY(50%);
-    fill: var(--title-text-color);
-}
 
 .modal-form__section>input {
     height: 40px;
@@ -120,9 +127,7 @@
     outline: none;
 }
 
-.modal-form__input:focus~.section-icon {
-    fill: var(--accent-color);
-}
+
 
 .modal-form__check {
     margin-top: 20px;
@@ -173,9 +178,6 @@
     margin-right: 7px;
 }
 
-.modal-form__check--icon:hover {
-    cursor: pointer;
-}
 
 .modal-form>button {
     margin: auto;
