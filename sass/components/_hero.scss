@@ -1,0 +1,61 @@
+.hero {
+    background: var(--background-color-footer-hero);
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/team.jpg);
+    height: 600px;
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.hero-button.primary {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+}
+
+.hero-button.primary :hover,
+.butthero-buttonon.primary :focus {
+    color: var(--accent-color);
+}
+
+.hero-button.primary {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 31px;
+    padding-right: 31px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border: 0px;
+}
+
+.hero-title {
+    color: var(--white-color);
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}

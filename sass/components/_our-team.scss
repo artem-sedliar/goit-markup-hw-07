@@ -1,0 +1,103 @@
+.team__header {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+.team__section:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+        1px 4px 6px rgb(0 0 0 / 16%);
+}
+.items {
+    background-color: var(--background-color-team);
+    height: 708px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team__network {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.team__links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.team__icon {
+    width: 20px;
+    height: 20px;
+    color: var(--white-color);
+}
+
+.team__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--border-color-client);
+    transition: 250ms var(--animation-time);
+}
+
+.team__link:hover,
+.team__link:focus {
+    fill: var(--white-color);
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+.team__name {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.team__section {
+    background-color: var(--white-color);
+
+    margin-bottom: 94px;
+    margin-right: 30px;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+        1px 4px 6px rgb(0 0 0 / 16%);
+}
+
+.team__section:last-child {
+    margin-right: 0px;
+}
+
+.team__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 16px;
+}

@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+.site-header__logo,
+.footer-logo__link,
+.site-navigation__reference--link,
+.site-navigation__reference--last,
+.header-contacts__mail,
+.footer-address__contact,
+.footer-address__link,
+.footer-address__contact--link,
+.list-icon {
+    text-decoration: none;
+}
+.page {
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+}
